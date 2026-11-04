@@ -77,4 +77,9 @@ const MUR = [
   { img: "assets/victoire-belbex.webp", titre: "Victoire contre Belbex", sous: "24 octobre", alt: "Les joueurs célèbrent la victoire 2-1 contre Belbex au vestiaire", lien: "https://www.instagram.com/p/De7o9y5NpbZ/" }
 ];
 
-const PARTENAIRES = ["Koesio", "Transport Diagonale", "Garage de Theix", "DG Plomberie Chauffage", "Crousti Pain", "Restaurant du Village Auvergnat"];
+const PARTENAIRES = [
+  "Furodet", "Chauff Granules", "Coudert", "Garage Theix", "Société Construction des Puys", "Sanchez", "Rebatet",
+  "Carrière de Manson", "DG Plomberie", "Crousti Pain", "Charade", "Doutre-Pierron", "Beaudonnat RDL", "Transports Diagonale",
+  "Vieira et fils", "Le Comptoir", "Chai Victorius", "Marché aux fleurs", "Boisvallon", "Ernova", "Machado", "De Barros",
+  "Blackrock Games", "AADR63", "Village Auvergnat", "Soulière traiteur", "Fenêtres au carré", "GAEC de Chatignat", "Koesio",
+];

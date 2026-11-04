@@ -222,11 +222,18 @@
 </main>
 
 <footer class="pied sombre">
-  <div class="wrap">
-    <div class="pied-part">
+  <div class="pied-part">
+    <div class="wrap part-tete">
       <h2>Ils soutiennent l'ASSG</h2>
+      <button type="button" class="fleche" id="part-pause" aria-pressed="false" aria-label="Mettre le défilement en pause">
+        <svg viewBox="0 0 12 12" aria-hidden="true"><path class="ic-pause" d="M2 1h3v10H2zM7 1h3v10H7z"/><path class="ic-lecture" d="M3 1l8 5-8 5z"/></svg>
+      </button>
+    </div>
+    <div class="defile" id="defile">
       <ul id="partenaires" class="partenaires"></ul>
     </div>
+  </div>
+  <div class="wrap">
     <div class="pied-nav">
       <div class="pied-marque">
         <img src="assets/logo.png" alt="Blason de l'AS Saint-Genès-Champanelle" width="76" height="76" loading="lazy">

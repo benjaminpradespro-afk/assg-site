@@ -276,7 +276,12 @@
   if (surIOS || /Android/.test(ua)) $('[data-lien="carte"]').removeAttribute("target");
 
   /* Partenaires et liens */
-  $("#partenaires").innerHTML = PARTENAIRES.map((p) => `<li class="card">${p}</li>`).join("");
+  const partenaires = (attr) => PARTENAIRES.map((p) => `<li class="card"${attr}>${p}</li>`).join("");
+  $("#partenaires").innerHTML = partenaires("") + partenaires(' aria-hidden="true"');
+  $("#partenaires").style.setProperty("--duree", `${PARTENAIRES.length * 3.5}s`);
+  $("#part-pause").addEventListener("click", (ev) => {
+    ev.currentTarget.setAttribute("aria-pressed", $("#defile").classList.toggle("en-pause"));
+  });
   document.querySelectorAll("[data-lien]").forEach((a) => { a.href = SITE.liens[a.dataset.lien]; });
   document.querySelectorAll("[data-maj]").forEach((n) => { n.textContent = MAJ_RESULTATS; });
 
