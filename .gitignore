@@ -1,3 +1,5 @@
 .DS_Store
 scripts/maj-resultats.log
 js/resultats.js.tmp
+js/actus-insta.js.tmp
+assets/insta/*.tmp

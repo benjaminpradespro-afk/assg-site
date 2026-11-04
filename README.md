@@ -23,11 +23,18 @@ GitHub le lance chaque matin, lundi compris, et le samedi et le dimanche soir. V
 - **Nom d'un club mal écrit** : corrigez-le dans `scripts/clubs.tsv`.
 - **Nouvelle saison** : vérifiez les adresses des équipes en haut de `scripts/maj-resultats.pl` et les forfaits corrigés à la main (`%FORFAITS_FFF`).
 
+## Actualité du club
+
+- **Résumé des matchs (grande card)** : la page le calcule à partir des résultats. Il change chaque lundi à 8 h et porte sur la dernière semaine terminée où le club a joué.
+- **Posts Instagram (autres cards)** : chaque lundi matin, `scripts/maj-actus.pl` reprend les 5 dernières publications depuis le flux Behold relié au compte du club, dont l'adresse est dans la variable de dépôt `BEHOLD_FLUX`. Meta interdit de lire Instagram directement par script. Vous pouvez aussi le lancer avec **Run workflow**.
+
+Tant qu'il manque des posts, ces cards affichent les actualités de `ACTUS`, dans `js/data.js`.
+
 ## Mettre à jour le reste du site
 
 Tout se passe dans `js/data.js`.
 
-- **Actualité** : ajoutez une entrée à `ACTUS` et déposez l'image dans `assets/`.
 - **Événement** (loto, tournoi, AG...) : ajoutez une entrée à `EVENEMENTS`.
+- **Partenaire** : ajoutez son nom à `PARTENAIRES`. La vitesse du bandeau s'adapte toute seule.
 
 Le prochain match, le compte à rebours, le programme du week-end et l'agenda se calculent à partir de la date du jour.

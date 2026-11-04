@@ -32,13 +32,30 @@ jobs:
         if: github.event_name != 'push'
         env:
           TZ: Europe/Paris
+        run: perl scripts/maj-resultats.pl
+
+      # Chaque lundi matin, ou à la demande. Inactif tant que la variable BEHOLD_FLUX du dépôt n'est pas définie.
+      - name: Reprendre les posts Instagram
+        id: instagram
+        if: github.event_name != 'push' && vars.BEHOLD_FLUX != ''
+        continue-on-error: true
+        env:
+          TZ: Europe/Paris
+          BEHOLD_FLUX: ${{ vars.BEHOLD_FLUX }}
+          EVENEMENT: ${{ github.event_name }}
         run: |
-          perl scripts/maj-resultats.pl
+          if [ "$(date +%u)" = 1 ] || [ "$EVENEMENT" = workflow_dispatch ]; then
+            perl scripts/maj-actus.pl
+          fi
+
+      - name: Enregistrer les changements
+        if: github.event_name != 'push'
+        run: |
           git config user.name "Mise à jour ASSG"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add js/resultats.js assets/clubs
+          git add js/resultats.js js/actus-insta.js assets
           if ! git diff --cached --quiet; then
-            git commit -m "Mise à jour des résultats"
+            git commit -m "Mise à jour automatique du site"
             git pull --rebase origin main
             git push
           fi
@@ -54,3 +71,8 @@ jobs:
 
       - id: deploiement
         uses: actions/deploy-pages@v5
+
+      # Le site reste publié avec les résultats du jour, mais GitHub prévient le propriétaire du dépôt par e-mail
+      - name: Signaler un flux Instagram en panne
+        if: steps.instagram.outcome == 'failure'
+        run: exit 1

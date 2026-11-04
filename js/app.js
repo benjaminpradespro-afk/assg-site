@@ -195,11 +195,55 @@
   /* Actualités : grande une, encart, article moyen, brèves */
   const dateActu = (d) => new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", year: "numeric" }).format(new Date(d + "T12:00:00"));
   const meta = (a) => `<p class="actu-meta"><span class="pill pill-vif">${a.tag}</span> ${dateActu(a.date)}</p>`;
-  const [une, rail, moyen, ...breves] = ACTUS;
+  /* Résumé des matchs : il change chaque lundi à 8 h, après la mise à jour matinale des résultats,
+     et porte sur la dernière semaine terminée où l'ASSG a joué. Les forfaits du club n'y figurent pas. */
+  const lundiDe = (d) => { const l = new Date(d); l.setDate(l.getDate() - (l.getDay() + 6) % 7); l.setHours(8, 0, 0, 0); return l; };
+  const scoreDe = (m) => `${Math.max(m.h, m.a)}-${Math.min(m.h, m.a)}`;
+  const auxTirs = (m) => /tirs au but/.test(m.note || "");
+  const VERBE = { V: "s'imposent", N: "font match nul", D: "s'inclinent" };
+  const titreMatch = (m) => {
+    if (auxTirs(m)) return `${LIBELLE[issue(m)]} aux tirs au but contre ${m.adv}`;
+    if (m.note) return `${LIBELLE[issue(m)]} par forfait contre ${m.adv}`;
+    return `${LIBELLE[issue(m)]} <mark class="nb">${scoreDe(m)}</mark> contre ${m.adv}`;
+  };
+
+  function resumeDuLundi() {
+    const maintenant = new Date();
+    const bascule = lundiDe(maintenant);
+    if (bascule > maintenant) bascule.setDate(bascule.getDate() - 7);
+    const finis = passes.filter((m) => !m.ff && quand(m) < bascule);
+    if (!finis.length) return null;
+    const semaine = lundiDe(quand(finis[0])).getTime();
+    const [m, ...autres] = finis.filter((x) => lundiDe(quand(x)).getTime() === semaine)
+      .sort((x, y) => x.equipe.id.localeCompare(y.equipe.id) || quand(y) - quand(x));
+    const e = m.equipe;
+    const [a, b] = affiche(m);
+    const lieu = m.dom ? "à domicile" : "à l'extérieur";
+    const issueTexte = `${auxTirs(m) ? VERBE.N : VERBE[issue(m)]} ${scoreDe(m)} contre ${m.adv}${m.note ? ` (${m.note.toLowerCase()})` : ""}`;
+    let texte =`${dateLongue(m).replace(/^./, (c) => c.toUpperCase())}, ${lieu}, les ${e.nom} ${issueTexte} en ${m.c}.`;
+    const ligne = e.classement.find((l) => l[0] === e.club);
+    if (ligne && !e.avis && e.niveau.startsWith(m.c)) {
+      const rang = e.classement.indexOf(ligne) + 1;
+      texte += ` Ils occupent la ${rang === 1 ? "1re" : rang + "e"} place avec <mark>${ligne[1]} point${ligne[1] > 1 ? "s" : ""}</mark>.`;
+    }
+    const prochainMatch = aVenir.find((x) => x.equipe === e);
+    return {
+      date: m.d, tag: m.c, voir: e.id, titre: titreMatch(m), texte,
+      visuel: logo(a, m.logo) + logo(b, m.logo),
+      une: { haut: "Résumé", bas: [0, 6].includes(quand(m).getDay()) ? "du week-end" : "du match", a, b, h: m.h, c: m.a },
+      suite: (autres.length ? `<ul class="une-autres">${autres.map((x) => `<li><b>${x.equipe.nom}</b> · ${titreMatch(x)}</li>`).join("")}</ul>` : "")
+        + (prochainMatch ? `<p class="une-suite">Prochain rendez-vous des ${e.nom} : ${dateLongue(prochainMatch)}${prochainMatch.t ? " à " + heure(prochainMatch.t) : ""}, ${prochainMatch.dom ? "à domicile" : "à l'extérieur"} contre ${prochainMatch.adv}.</p>` : "")
+    };
+  }
+
+  /* Le résumé occupe la une, les posts Instagram les autres places ; à défaut, les actualités de data.js */
+  const [actuFixe, ...autresActus] = ACTUS;
+  const une = resumeDuLundi() || actuFixe;
+  const [rail, moyen, ...breves] = [...POSTS_INSTAGRAM, ...autresActus].slice(0, 5);
   const u = une.une;
   $("#lede-une").innerHTML = `
     <div class="une-visuel">
-      <div class="une-img"><img src="${une.img}" alt="${une.alt}"></div>
+      ${une.visuel ? `<div class="une-logos">${une.visuel}</div>` : `<div class="une-img"><img src="${une.img}" alt="${une.alt}"></div>`}
       <div class="une-type">
         <span class="une-gros">${u.haut}<br>${u.bas}</span>
         <span class="une-score"><small>${u.a}</small><b class="${u.h > u.c ? "gagne" : ""}">${u.h}</b><b class="${u.c > u.h ? "gagne" : ""}">${u.c}</b><small>${u.b}</small></span>
@@ -207,8 +251,9 @@
     </div>
     <div class="actu-corps">
       ${meta(une)}
-      <h3><a href="${une.lien}" target="_blank" rel="noopener">${une.titre}</a></h3>
+      <h3><a ${une.voir ? `href="#resultats" data-voir="${une.voir}"` : `href="${une.lien}" target="_blank" rel="noopener"`}>${une.titre}</a></h3>
       <p class="une-txt">${une.texte}</p>
+      ${une.suite || ""}
     </div>`;
   $("#lede-rail").innerHTML = `
     <img src="${rail.img}" alt="${rail.alt}">
