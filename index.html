@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AS Saint-Genès-Champanelle</title>
+<meta name="description" content="Site du club de football de l'AS Saint-Genès-Champanelle (Puy-de-Dôme) : résultats, classements, actualités, agenda et catégories.">
+<link rel="icon" href="assets/logo.png">
+<link rel="canonical" href="https://assaintgeneschampanelle.fr/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AS Saint-Genès-Champanelle">
+<meta property="og:title" content="AS Saint-Genès-Champanelle">
+<meta property="og:description" content="Résultats, calendrier, actualités et catégories du club de football du Puy-de-Dôme.">
+<meta property="og:url" content="https://assaintgeneschampanelle.fr/">
+<meta property="og:image" content="https://assaintgeneschampanelle.fr/assets/boutique-tenues.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="saut" href="#resultats">Aller aux résultats</a>
+
+<aside class="alerte" aria-label="Annonce">
+  <div class="wrap alerte-in">
+    <p>Les <strong>Vétérans</strong> recrutent pour la <strong class="nb">saison 2026-2027</strong></p>
+    <a class="btn" data-lien="facebook" target="_blank" rel="noopener">Rejoins-nous</a>
+  </div>
+</aside>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="marque" href="#accueil" aria-label="AS Saint-Genès-Champanelle, accueil">
+      <img src="assets/logo.png" alt="" width="54" height="54">
+    </a>
+    <button id="burger" class="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav sombre" aria-label="Navigation principale">
+      <div class="nav-g">
+        <a href="#resultats">Résultats</a>
+        <a href="#actualites">Actualités</a>
+        <a href="#categories">Catégories</a>
+        <a href="#stade">Stade</a>
+        <a href="#club">Le club</a>
+      </div>
+      <div class="nav-d">
+        <a data-lien="instagram" target="_blank" rel="noopener">Instagram</a>
+        <a data-lien="boutique" target="_blank" rel="noopener">Boutique</a>
+        <a class="btn" data-lien="facebook" target="_blank" rel="noopener">Nous rejoindre</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="accueil">
+
+  <section class="band sombre hero" aria-label="Le club, prochain match et calendrier">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">AS Saint-Genès-Champanelle · Puy-de-Dôme · Depuis 1987</p>
+          <h1>Un club, une commune, une <mark>passion</mark>.</h1>
+          <p class="hero-sous">Résultats, calendrier, actualités et catégories du club de football, du district jusqu'au niveau régional.</p>
+          <div class="btns">
+            <a class="btn" href="#resultats">Voir les résultats</a>
+            <a class="btn btn-ligne" data-lien="facebook" target="_blank" rel="noopener">Nous rejoindre</a>
+          </div>
+        </div>
+        <div id="next" class="next tuile-pleine"></div>
+      </div>
+
+      <div class="sb-tete">
+        <h2>Le <mark>calendrier</mark> des matchs</h2>
+        <div class="sb-ctrl">
+          <button type="button" class="fleche" id="sb-prec" aria-label="Matchs précédents">←</button>
+          <button type="button" class="fleche" id="sb-suiv" aria-label="Matchs suivants">→</button>
+          <a class="btn btn-ligne" href="#resultats">Calendrier complet</a>
+        </div>
+      </div>
+      <ul id="scoreboard" class="scoreboard" tabindex="0" aria-label="Scores et prochains matchs, faites défiler horizontalement"></ul>
+    </div>
+  </section>
+
+  <section id="actualites" class="band clair" aria-labelledby="t-act">
+    <div class="wrap">
+      <div class="tete"><h2 id="t-act">Actualité du <mark>club</mark></h2></div>
+      <div class="lede">
+        <article id="lede-une" class="lede-une card"></article>
+        <article id="lede-rail" class="lede-rail card"></article>
+        <article id="lede-moyen" class="lede-moyen card"></article>
+        <ul id="lede-liste" class="lede-liste"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band sombre">
+    <div class="wrap">
+      <div id="prog-section" class="bloc prog-grid">
+        <h2>Programme du <mark class="nb">week-end</mark> <span id="wk-date" class="wk-date"></span></h2>
+        <ul id="programme" class="programme"></ul>
+      </div>
+
+      <div id="resultats" class="bloc">
+        <div class="tete">
+          <h2>Résultats et <mark>classements</mark></h2>
+          <p>Saison 2026 – 2027 · Mis à jour le <span data-maj></span></p>
+        </div>
+        <div id="onglets" class="onglets" role="tablist" aria-label="Choisir une équipe"></div>
+        <div id="equipe-panel" class="panel" role="tabpanel"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band clair">
+    <div class="wrap">
+      <div class="bloc">
+        <div class="tete"><h2>Suivez-<mark>nous</mark></h2></div>
+        <div class="reseaux sombre">
+          <a class="tuile-pleine" data-lien="instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg>
+            <div><b>Instagram</b><span>@assaintgeneschampanelle</span></div>
+          </a>
+          <a class="tuile-pleine" data-lien="facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>
+            <div><b>Facebook</b><span>La page officielle</span></div>
+          </a>
+          <a class="tuile-pleine" data-lien="boutique" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8z"/><path d="M9 11V6a3 3 0 0 1 6 0v5"/></svg>
+            <div><b>Boutique</b><span>Les tenues du club</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="bloc">
+        <div class="galerie sombre">
+          <div class="gal-grand">
+            <div class="tete"><h2 id="t-img">En <mark>images</mark></h2></div>
+            <a id="gal-lien" target="_blank" rel="noopener"><img id="gal-img" src="assets/weekend-24-25-oct.webp" alt=""></a>
+          </div>
+          <ul id="gal-liste" class="gal-liste"></ul>
+        </div>
+      </div>
+
+      <div class="bloc split card sombre">
+        <div class="split-txt">
+          <h2>Portez les <mark>couleurs</mark> du club</h2>
+          <p>Le vert et blanc se porte aussi en dehors du terrain. Retrouvez les tenues de l'ASSG dans la boutique officielle du club chez adidas.</p>
+          <div class="btns">
+            <a class="btn" data-lien="boutique" target="_blank" rel="noopener">Voir la boutique</a>
+          </div>
+        </div>
+        <div class="split-media"><img class="split-img crop-tenues" src="assets/boutique-tenues.jpg" alt="Deux membres de l'ASSG souriants, en haut d'entraînement vert du club" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band sombre">
+    <div class="wrap">
+      <div id="categories" class="bloc">
+        <div class="tete"><h2>Nos <mark>catégories</mark></h2></div>
+        <div class="tuiles">
+          <a class="tuile t3 tuile-pleine" href="#resultats" data-voir="s1"><span class="tuile-haut"><span class="tuile-niv">Régional 3</span><span class="tuile-fl">→</span></span><b>Seniors 1</b></a>
+          <a class="tuile t3 tuile-pleine" href="#resultats" data-voir="s2"><span class="tuile-haut"><span class="tuile-niv">Départemental 2</span><span class="tuile-fl">→</span></span><b>Seniors 2</b></a>
+          <a class="tuile t3 tuile-pleine" href="#resultats" data-voir="s3"><span class="tuile-haut"><span class="tuile-niv">Départemental 4</span><span class="tuile-fl">→</span></span><b>Seniors 3</b></a>
+          <a class="tuile t4 tuile-pleine" data-lien="facebook" target="_blank" rel="noopener"><span class="tuile-haut"><span class="tuile-niv">Jeunes</span><span class="tuile-fl">→</span></span><b>U18</b></a>
+          <a class="tuile t4 tuile-pleine" data-lien="facebook" target="_blank" rel="noopener"><span class="tuile-haut"><span class="tuile-niv">Jeunes</span><span class="tuile-fl">→</span></span><b>U15</b></a>
+          <a class="tuile t4 tuile-pleine" data-lien="facebook" target="_blank" rel="noopener"><span class="tuile-haut"><span class="tuile-niv">Jeunes</span><span class="tuile-fl">→</span></span><b>U13</b></a>
+          <a class="tuile t4 tuile-pleine" data-lien="facebook" target="_blank" rel="noopener"><span class="tuile-haut"><span class="tuile-niv">U6 à U11, dès 5 ans</span><span class="tuile-fl">→</span></span><b>École de foot</b></a>
+        </div>
+      </div>
+
+      <div id="stade" class="bloc split split-inv card">
+        <div class="split-media"><img class="split-img crop-terrain" src="assets/nul-quinssaines.webp" alt="Le terrain du stade municipal et ses buts, sous un ciel gris" loading="lazy"></div>
+        <div class="split-txt">
+          <h2>Le stade municipal, la maison des <mark>Vert et Blanc</mark></h2>
+          <p>Route de Pardon, à Saint-Genès-Champanelle, au pied du puy de Dôme. Venez encourager nos équipes un jour de match.</p>
+          <div class="btns">
+            <a class="btn" data-lien="carte" target="_blank" rel="noopener">Voir sur la carte</a>
+            <a class="btn btn-ligne" href="#agenda-section">Prochains matchs</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="agenda-section" class="bloc">
+        <div class="tete"><h2>À venir <mark>au stade</mark></h2></div>
+        <ul id="agenda" class="agenda"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band clair">
+    <div class="wrap">
+      <div id="club" class="bloc">
+        <div class="tete"><h2>Le <mark>club</mark></h2></div>
+        <div class="club-txt card">
+          <div>
+            <h3>Fiers de nos couleurs depuis 1987</h3>
+            <p>L'AS Saint-Genès-Champanelle réunit toute une commune autour du football. Son blason garde la silhouette du puy de Dôme et ses deux trèfles, et ses équipes défendent le vert et blanc du district jusqu'au niveau régional.</p>
+          </div>
+          <dl class="fiche">
+            <div><dt>Fondation</dt><dd>1987</dd></div>
+            <div><dt>Couleurs</dt><dd>Vert et blanc</dd></div>
+            <div><dt>Stade</dt><dd>Stade municipal, route de Pardon</dd></div>
+            <div><dt>N° d'affiliation FFF</dt><dd>524952</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div id="contact" class="bloc">
+        <div class="tete"><h2>Restons en <mark>contact</mark></h2></div>
+        <div class="carte carte-lime card clair">
+          <div>
+            <h3>Rejoignez le <mark>club</mark></h3>
+            <p>Joueur, joueuse, éducateur, bénévole ou partenaire : écrivez-nous sur Facebook ou passez nous voir au stade un jour de match.</p>
+          </div>
+          <div class="carte-action">
+            <a class="btn" data-lien="facebook" target="_blank" rel="noopener">Nous écrire</a>
+            <address>Stade municipal, route de Pardon, 63122 Saint-Genès-Champanelle</address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied sombre">
+  <div class="wrap">
+    <div class="pied-part">
+      <h2>Ils soutiennent l'ASSG</h2>
+      <ul id="partenaires" class="partenaires"></ul>
+    </div>
+    <div class="pied-nav">
+      <div class="pied-marque">
+        <img src="assets/logo.png" alt="Blason de l'AS Saint-Genès-Champanelle" width="76" height="76" loading="lazy">
+        <p><b>AS Saint-Genès-Champanelle</b><br>Même passion, même esprit, toujours ensemble.</p>
+      </div>
+      <nav aria-label="Le club">
+        <h3>Le club</h3>
+        <a href="#club">Présentation du club</a>
+        <a href="#stade">Stade</a>
+        <a href="#categories">Catégories</a>
+        <a data-lien="facebook" target="_blank" rel="noopener">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
+      <nav aria-label="Compétition">
+        <h3>Compétition</h3>
+        <a href="#resultats" data-voir="s1">Seniors 1, Régional 3</a>
+        <a href="#resultats" data-voir="s2">Seniors 2, Départemental 2</a>
+        <a href="#resultats" data-voir="s3">Seniors 3, Départemental 4</a>
+        <a data-lien="fff" target="_blank" rel="noopener">Page du club sur le site de la FFF</a>
+      </nav>
+      <nav aria-label="Réseaux du club">
+        <h3>Suivre l'ASSG</h3>
+        <a data-lien="instagram" target="_blank" rel="noopener">Instagram</a>
+        <a data-lien="facebook" target="_blank" rel="noopener">Facebook</a>
+        <a data-lien="boutique" target="_blank" rel="noopener">Boutique</a>
+      </nav>
+    </div>
+    <p class="pied-src">Résultats et classements : FFF et SportCorico, relevés le <span data-maj></span>. Visuels : comptes officiels du club.</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/resultats.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

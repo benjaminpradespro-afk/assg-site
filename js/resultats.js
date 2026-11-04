@@ -1,0 +1,111 @@
+/* Fichier généré par scripts/maj-resultats.pl : ne pas le modifier à la main. */
+const MAJ_RESULTATS = "4 novembre 2026";
+
+const EQUIPES = [
+  {"club":"AS St Genès Champanelle 1","court":"R3","id":"s1","niveau":"Régional 3 · Poule B","nom":"Seniors 1",
+    "classement": [
+      ["AS Espinat F. 1",13,5,4,1,0,13,5,8,533889],
+      ["Esp. Ceyratoise 2",13,5,4,1,0,16,6,10,529030],
+      ["Aurillac FC 2",12,4,4,0,0,11,3,8,580563],
+      ["US Vallée de l'Authre 2",10,5,3,1,1,11,7,4,551835],
+      ["Am. Laïq. de Quinssaines 1",8,5,2,2,1,7,6,1,522999],
+      ["AS Clermont St-Jacques 1",7,5,2,1,2,11,9,2,525985],
+      ["AS St Genès Champanelle 1",7,5,2,1,2,7,8,-1,524952],
+      ["AS Varennoise 1",5,5,1,2,2,10,13,-3,508744],
+      ["CS Pont-du-Château 1",3,5,1,0,4,6,13,-7,520152],
+      ["CS de Volvic 1",3,5,1,0,4,6,16,-10,506562],
+      ["AM.S Belbexoise 1",1,5,0,1,4,7,13,-6,531699],
+      ["AS Cheminots St-Germain-des-Fossés 1",0,4,0,0,4,4,10,-6,506298]
+    ],
+    "matchs": [
+      {"a":8,"adv":"FC Thiers Auvergne","c":"Coupe de France","d":"2026-08-30","dom":false,"h":0,"logo":582753,"t":"14:30"},
+      {"a":2,"adv":"Aurillac FC (2)","c":"Régional 3","d":"2026-09-06","dom":true,"h":1,"logo":580563,"t":"15:00"},
+      {"a":3,"adv":"A. Ouvoimoija","c":"Coupe de France","d":"2026-09-13","dom":false,"h":3,"logo":551537,"note":"3-1 aux tirs au but","res":"V","t":"14:30"},
+      {"a":3,"adv":"CS Pont-du-Château","c":"Régional 3","d":"2026-09-19","dom":false,"h":1,"logo":520152,"t":"18:00"},
+      {"a":2,"adv":"Vergongheon-Arvant","c":"Coupe de France","d":"2026-09-26","dom":true,"h":0,"logo":506371,"t":"20:00"},
+      {"a":1,"adv":"Quinssaines","c":"Régional 3","d":"2026-10-03","dom":true,"h":1,"logo":522999,"t":"19:00"},
+      {"a":1,"adv":"FC Chamalières (2)","c":"Coupe Laura Foot","d":"2026-10-11","dom":false,"h":4,"logo":520923,"t":"15:00"},
+      {"a":0,"adv":"Vallée de l'Authre (2)","c":"Régional 3","d":"2026-10-18","dom":false,"h":3,"logo":551835,"t":"15:00"},
+      {"a":1,"adv":"Belbex","c":"Régional 3","d":"2026-10-24","dom":true,"h":2,"logo":531699,"t":"19:00"},
+      {"adv":"AS Espinat","c":"Régional 3","d":"2026-11-08","dom":false,"logo":533889,"t":"15:00"},
+      {"adv":"CS Volvic","c":"Régional 3","d":"2026-11-15","dom":true,"logo":506562,"t":"15:00"},
+      {"adv":"Ceyrat (2)","c":"Régional 3","d":"2026-11-21","dom":false,"logo":529030,"t":"18:00"},
+      {"adv":"St-Germain-des-Fossés","c":"Régional 3","d":"2026-12-06","dom":true,"logo":506298,"t":"15:00"},
+      {"adv":"AS Varennes","c":"Régional 3","d":"2026-12-12","dom":false,"logo":508744,"t":"19:00"},
+      {"adv":"AS Clermont St-Jacques","c":"Régional 3","d":"2027-01-30","dom":false,"logo":525985,"t":"17:30"},
+      {"adv":"CS Pont-du-Château","c":"Régional 3","d":"2027-02-07","dom":true,"logo":520152,"t":"15:00"},
+      {"adv":"Quinssaines","c":"Régional 3","d":"2027-02-28","dom":false,"logo":522999,"t":"15:00"},
+      {"adv":"Vallée de l'Authre (2)","c":"Régional 3","d":"2027-03-07","dom":true,"logo":551835,"t":"15:00"},
+      {"adv":"Belbex","c":"Régional 3","d":"2027-03-21","dom":false,"logo":531699,"t":"15:00"},
+      {"adv":"AS Espinat","c":"Régional 3","d":"2027-04-04","dom":true,"logo":533889,"t":"15:00"},
+      {"adv":"CS Volvic","c":"Régional 3","d":"2027-04-10","dom":false,"logo":506562,"t":"18:00"},
+      {"adv":"Ceyrat (2)","c":"Régional 3","d":"2027-04-25","dom":true,"logo":529030,"t":"15:00"},
+      {"adv":"St-Germain-des-Fossés","c":"Régional 3","d":"2027-05-01","dom":false,"logo":506298,"t":"19:00"},
+      {"adv":"AS Varennes","c":"Régional 3","d":"2027-05-16","dom":true,"logo":508744,"t":"15:00"},
+      {"adv":"AS Clermont St-Jacques","c":"Régional 3","d":"2027-05-23","dom":true,"logo":525985,"t":"15:00"},
+      {"adv":"Aurillac FC (2)","c":"Régional 3","d":"2027-05-30","dom":false,"logo":580563,"t":"15:00"}
+    ]
+  },
+  {"club":"AS St Genès Champanelle 2","court":"D2","id":"s2","niveau":"Départemental 2 · Poule A","nom":"Seniors 2",
+    "classement": [
+      ["FC Sauxillanges St-Babel Brenat 1",15,6,5,0,1,17,4,13,560797],
+      ["St-Amant et Tallende SC 1",13,6,4,1,1,10,5,5,564178],
+      ["US Vic-le-Comte 2",12,6,4,0,2,10,7,3,506559],
+      ["Esp. Ceyratoise 3",11,6,3,2,1,12,3,9,529030],
+      ["ES St-Germinoise 1",8,5,2,2,1,7,5,2,516806],
+      ["AS Orcines 2",8,6,2,2,2,14,11,3,520786],
+      ["Am. Laïq. S. de Besse Égliseneuve 1",8,6,2,2,2,7,6,1,529900],
+      ["US Issoire A. du Mas 3",7,6,2,1,3,7,10,-3,506507],
+      ["Écureuils Franc Rosier 2",7,5,2,1,2,10,10,0,526932],
+      ["Entente Vallée de la Dordogne 1",7,6,2,1,3,6,11,-5,561223],
+      ["AS St Genès Champanelle 2",3,6,1,0,5,10,24,-14,524952],
+      ["FC Plauzat-Champeix 1",0,6,0,0,6,3,17,-14,529886]
+    ],
+    "matchs": [
+      {"a":3,"adv":"Besse Égliseneuve","c":"Départemental 2","d":"2026-09-06","dom":true,"h":0,"logo":529900,"t":"13:00"},
+      {"a":1,"adv":"Ceyrat (3)","c":"Départemental 2","d":"2026-09-20","dom":false,"h":5,"logo":529030,"t":"13:00"},
+      {"a":1,"adv":"Plauzat-Champeix","c":"Départemental 2","d":"2026-09-27","dom":true,"h":5,"logo":529886,"t":"13:00"},
+      {"a":1,"adv":"St-Amant-Tallende","c":"Départemental 2","d":"2026-10-03","dom":false,"h":3,"logo":564178,"t":"20:00"},
+      {"a":7,"adv":"Franc Rosier (2)","c":"Départemental 2","d":"2026-10-18","dom":true,"h":2,"logo":526932,"t":"13:00"},
+      {"a":1,"adv":"AS Orcines (2)","c":"Départemental 2","d":"2026-10-25","dom":false,"h":5,"logo":520786,"t":"15:00"},
+      {"a":3,"adv":"Neyrat Foot Mosaïc","c":"Coupe Gérard Faure","d":"2026-11-01","dom":true,"ff":true,"h":0,"logo":580903,"note":"Forfait","t":"15:00"},
+      {"adv":"St-Germain-Lembron","c":"Départemental 2","d":"2026-11-08","dom":true,"logo":516806,"t":"15:00"},
+      {"adv":"US Issoire (3)","c":"Départemental 2","d":"2026-11-14","dom":false,"logo":506507,"t":"20:00"},
+      {"adv":"FC2SBB","c":"Départemental 2","d":"2026-11-22","dom":true,"logo":560797,"t":"13:00"},
+      {"adv":"Vic-le-Comte (2)","c":"Départemental 2","d":"2026-12-06","dom":false,"logo":506559,"t":"13:00"},
+      {"adv":"Vallée de la Dordogne","c":"Départemental 2","d":"2026-12-13","dom":false,"logo":561223,"t":"15:00"},
+      {"adv":"Ceyrat (3)","c":"Départemental 2","d":"2027-01-31","dom":true,"logo":529030,"t":"13:00"},
+      {"adv":"Plauzat-Champeix","c":"Départemental 2","d":"2027-02-07","dom":false,"logo":529886,"t":"15:00"},
+      {"adv":"St-Amant-Tallende","c":"Départemental 2","d":"2027-02-21","dom":true,"logo":564178,"t":"13:00"},
+      {"adv":"Franc Rosier (2)","c":"Départemental 2","d":"2027-03-07","dom":false,"logo":526932,"t":"13:00"},
+      {"adv":"AS Orcines (2)","c":"Départemental 2","d":"2027-03-21","dom":true,"logo":520786,"t":"13:00"},
+      {"adv":"St-Germain-Lembron","c":"Départemental 2","d":"2027-04-04","dom":false,"logo":516806,"t":"15:00"},
+      {"adv":"US Issoire (3)","c":"Départemental 2","d":"2027-04-11","dom":true,"logo":506507,"t":"13:00"},
+      {"adv":"FC2SBB","c":"Départemental 2","d":"2027-04-25","dom":false,"logo":560797,"t":"15:00"},
+      {"adv":"Vic-le-Comte (2)","c":"Départemental 2","d":"2027-05-02","dom":true,"logo":506559,"t":"13:00"},
+      {"adv":"Vallée de la Dordogne","c":"Départemental 2","d":"2027-05-23","dom":true,"logo":561223,"t":"13:00"},
+      {"adv":"Besse Égliseneuve","c":"Départemental 2","d":"2027-05-30","dom":false,"logo":529900,"t":"15:00"}
+    ]
+  },
+  {"avis":"Cette équipe est enregistrée en forfait général en championnat par la FFF. Aucun match n'est programmé.","club":"AS St Genès Champanelle 3","court":"D4","id":"s3","niveau":"Départemental 4 · Poule A","nom":"Seniors 3",
+    "classement": [
+      ["Pérignat FC 1",13,5,4,1,0,14,3,11,546837],
+      ["Am. S. Sugérienne 1",12,5,4,0,1,16,5,11,551900],
+      ["AS Romagnat 3",11,6,3,2,1,17,11,6,516330],
+      ["US Val de Couze Chambon 2",10,5,3,1,1,12,5,7,542828],
+      ["Esp. Ceyratoise 4",10,5,3,1,1,9,6,3,529030],
+      ["AS Moissat 2",10,6,3,1,2,16,9,7,525990],
+      ["FC St-Julien-de-Coppel 2",7,6,2,1,3,10,15,-5,538404],
+      ["ES St-Germinoise 2",5,6,1,2,3,6,10,-4,516806],
+      ["CS Auzatois 1",4,5,1,1,3,6,11,-5,535787],
+      ["CO Veyre-Monton 3",1,6,0,1,5,4,14,-10,532169],
+      ["FC Puy de Mur 4",1,5,0,1,4,4,25,-21,564682],
+      ["AS St Genès Champanelle 3",0,0,0,0,0,0,0,0,524952]
+    ],
+    "matchs": [
+      {"a":0,"adv":"FC Puy de Mur (4)","c":"Départemental 4","d":"2026-09-06","dom":false,"ff":true,"h":3,"logo":564682,"note":"Forfait","t":"13:00"},
+      {"a":3,"adv":"CS Auzat","c":"Départemental 4","d":"2026-09-20","dom":true,"ff":true,"h":0,"logo":535787,"note":"Forfait","t":"13:00"},
+      {"a":3,"adv":"Clermont Bibliot (2)","c":"Coupe Séniquette","d":"2026-10-11","dom":true,"ff":true,"h":0,"logo":531700,"note":"Forfait","t":"14:30"}
+    ]
+  }
+];
