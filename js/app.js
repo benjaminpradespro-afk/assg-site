@@ -36,7 +36,7 @@
   const logo = (nom, num) => {
     if (nom === "ASSG" || num === 524952) return '<img class="logo" src="assets/logo.png" alt="">';
     return num
-      ? `<img class="logo logo-club" src="assets/clubs/${num}.jpg" alt="" loading="lazy">`
+      ? `<img class="logo logo-club" src="assets/clubs/${num}.jpg" alt="">`
       : `<span class="mono" aria-hidden="true">${monogramme(nom)}</span>`;
   };
 
