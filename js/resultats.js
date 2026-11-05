@@ -1,5 +1,5 @@
 /* Fichier généré par scripts/maj-resultats.pl : ne pas le modifier à la main. */
-const MAJ_RESULTATS = "4 novembre 2026";
+const MAJ_RESULTATS = "5 novembre 2026";
 
 const EQUIPES = [
   {"club":"AS St Genès Champanelle 1","court":"R3","id":"s1","niveau":"Régional 3 · Poule B","nom":"Seniors 1",
