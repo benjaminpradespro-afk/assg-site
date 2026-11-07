@@ -4,18 +4,18 @@ const MAJ_RESULTATS = "7 novembre 2026";
 const EQUIPES = [
   {"club":"AS St Genès Champanelle 1","court":"R3","id":"s1","niveau":"Régional 3 · Poule B","nom":"Seniors 1",
     "classement": [
+      ["Aurillac FC 2",15,5,5,0,0,14,5,9,580563],
+      ["US Vallée de l'Authre 2",13,6,4,1,1,13,8,5,551835],
       ["AS Espinat F. 1",13,5,4,1,0,13,5,8,533889],
-      ["Esp. Ceyratoise 2",13,5,4,1,0,16,6,10,529030],
-      ["Aurillac FC 2",12,4,4,0,0,11,3,8,580563],
-      ["US Vallée de l'Authre 2",10,5,3,1,1,11,7,4,551835],
-      ["Am. Laïq. de Quinssaines 1",8,5,2,2,1,7,6,1,522999],
-      ["AS Clermont St-Jacques 1",7,5,2,1,2,11,9,2,525985],
+      ["Esp. Ceyratoise 2",13,6,4,1,1,17,8,9,529030],
+      ["Am. Laïq. de Quinssaines 1",11,6,3,2,1,11,6,5,522999],
+      ["AS Clermont St-Jacques 1",7,6,2,1,3,13,12,1,525985],
       ["AS St Genès Champanelle 1",7,5,2,1,2,7,8,-1,524952],
-      ["AS Varennoise 1",5,5,1,2,2,10,13,-3,508744],
-      ["CS Pont-du-Château 1",3,5,1,0,4,6,13,-7,520152],
-      ["CS de Volvic 1",3,5,1,0,4,6,16,-10,506562],
-      ["AM.S Belbexoise 1",1,5,0,1,4,7,13,-6,531699],
-      ["AS Cheminots St-Germain-des-Fossés 1",0,4,0,0,4,4,10,-6,506298]
+      ["CS Pont-du-Château 1",6,6,2,0,4,12,13,-1,520152],
+      ["AS Varennoise 1",5,6,1,2,3,10,19,-9,508744],
+      ["CS de Volvic 1",4,6,1,1,4,8,18,-10,506562],
+      ["AM.S Belbexoise 1",2,6,0,2,4,9,15,-6,531699],
+      ["AS Cheminots St-Germain-des-Fossés 1",0,5,0,0,5,4,14,-10,506298]
     ],
     "matchs": [
       {"a":8,"adv":"FC Thiers Auvergne","c":"Coupe de France","d":"2026-08-30","dom":false,"h":0,"logo":582753,"t":"14:30"},
