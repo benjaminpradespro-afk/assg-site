@@ -1,5 +1,5 @@
 /* Fichier généré par scripts/maj-resultats.pl : ne pas le modifier à la main. */
-const MAJ_RESULTATS = "7 novembre 2026";
+const MAJ_RESULTATS = "8 novembre 2026";
 
 const EQUIPES = [
   {"club":"AS St Genès Champanelle 1","court":"R3","id":"s1","niveau":"Régional 3 · Poule B","nom":"Seniors 1",
@@ -49,13 +49,13 @@ const EQUIPES = [
   {"club":"AS St Genès Champanelle 2","court":"D2","id":"s2","niveau":"Départemental 2 · Poule A","nom":"Seniors 2",
     "classement": [
       ["FC Sauxillanges St-Babel Brenat 1",15,6,5,0,1,17,4,13,560797],
+      ["Esp. Ceyratoise 3",14,7,4,2,1,14,3,11,529030],
       ["St-Amant et Tallende SC 1",13,6,4,1,1,10,5,5,564178],
       ["US Vic-le-Comte 2",12,6,4,0,2,10,7,3,506559],
-      ["Esp. Ceyratoise 3",11,6,3,2,1,12,3,9,529030],
+      ["US Issoire A. du Mas 3",10,7,3,1,3,8,10,-2,506507],
       ["ES St-Germinoise 1",8,5,2,2,1,7,5,2,516806],
-      ["AS Orcines 2",8,6,2,2,2,14,11,3,520786],
-      ["Am. Laïq. S. de Besse Égliseneuve 1",8,6,2,2,2,7,6,1,529900],
-      ["US Issoire A. du Mas 3",7,6,2,1,3,7,10,-3,506507],
+      ["AS Orcines 2",8,7,2,2,3,14,12,2,520786],
+      ["Am. Laïq. S. de Besse Égliseneuve 1",8,7,2,2,3,7,8,-1,529900],
       ["Écureuils Franc Rosier 2",7,5,2,1,2,10,10,0,526932],
       ["Entente Vallée de la Dordogne 1",7,6,2,1,3,6,11,-5,561223],
       ["AS St Genès Champanelle 2",3,6,1,0,5,10,24,-14,524952],
@@ -89,14 +89,14 @@ const EQUIPES = [
   },
   {"avis":"Cette équipe est enregistrée en forfait général en championnat par la FFF. Aucun match n'est programmé.","club":"AS St Genès Champanelle 3","court":"D4","id":"s3","niveau":"Départemental 4 · Poule A","nom":"Seniors 3",
     "classement": [
+      ["AS Romagnat 3",14,7,4,2,1,23,12,11,516330],
       ["Pérignat FC 1",13,5,4,1,0,14,3,11,546837],
       ["Am. S. Sugérienne 1",12,5,4,0,1,16,5,11,551900],
-      ["AS Romagnat 3",11,6,3,2,1,17,11,6,516330],
       ["US Val de Couze Chambon 2",10,5,3,1,1,12,5,7,542828],
       ["Esp. Ceyratoise 4",10,5,3,1,1,9,6,3,529030],
       ["AS Moissat 2",10,6,3,1,2,16,9,7,525990],
       ["FC St-Julien-de-Coppel 2",7,6,2,1,3,10,15,-5,538404],
-      ["ES St-Germinoise 2",5,6,1,2,3,6,10,-4,516806],
+      ["ES St-Germinoise 2",5,7,1,2,4,7,16,-9,516806],
       ["CS Auzatois 1",4,5,1,1,3,6,11,-5,535787],
       ["CO Veyre-Monton 3",1,6,0,1,5,4,14,-10,532169],
       ["FC Puy de Mur 4",1,5,0,1,4,4,25,-21,564682],
