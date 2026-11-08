@@ -54,12 +54,12 @@ const EQUIPES = [
       ["St-Amant et Tallende SC 1",13,7,4,1,2,10,7,3,564178],
       ["ES St-Germinoise 1",11,6,3,2,1,13,6,7,516806],
       ["US Issoire A. du Mas 3",10,7,3,1,3,8,10,-2,506507],
+      ["Entente Vallée de la Dordogne 1",10,7,3,1,3,8,11,-3,561223],
       ["AS Orcines 2",8,7,2,2,3,14,12,2,520786],
       ["Am. Laïq. S. de Besse Égliseneuve 1",8,7,2,2,3,7,8,-1,529900],
       ["Écureuils Franc Rosier 2",7,6,2,1,3,11,12,-1,526932],
-      ["Entente Vallée de la Dordogne 1",7,6,2,1,3,6,11,-5,561223],
       ["AS St Genès Champanelle 2",3,7,1,0,6,11,30,-19,524952],
-      ["FC Plauzat-Champeix 1",0,6,0,0,6,3,17,-14,529886]
+      ["FC Plauzat-Champeix 1",0,7,0,0,7,3,19,-16,529886]
     ],
     "matchs": [
       {"a":3,"adv":"Besse Égliseneuve","c":"Départemental 2","d":"2026-09-06","dom":true,"h":0,"logo":529900,"t":"13:00"},
@@ -91,15 +91,15 @@ const EQUIPES = [
     "classement": [
       ["Pérignat FC 1",16,6,5,1,0,19,3,16,546837],
       ["AS Romagnat 3",14,7,4,2,1,23,12,11,516330],
+      ["US Val de Couze Chambon 2",13,6,4,1,1,15,5,10,542828],
       ["AS Moissat 2",13,7,4,1,2,18,10,8,525990],
       ["Am. S. Sugérienne 1",12,6,4,0,2,17,7,10,551900],
       ["Esp. Ceyratoise 4",11,6,3,2,1,11,8,3,529030],
-      ["US Val de Couze Chambon 2",10,5,3,1,1,12,5,7,542828],
       ["FC St-Julien-de-Coppel 2",8,7,2,2,3,12,17,-5,538404],
       ["ES St-Germinoise 2",5,7,1,2,4,7,16,-9,516806],
       ["CS Auzatois 1",4,6,1,1,4,6,16,-10,535787],
       ["CO Veyre-Monton 3",1,6,0,1,5,4,14,-10,532169],
-      ["FC Puy de Mur 4",1,5,0,1,4,4,25,-21,564682],
+      ["FC Puy de Mur 4",1,6,0,1,5,4,28,-24,564682],
       ["AS St Genès Champanelle 3",0,0,0,0,0,0,0,0,524952]
     ],
     "matchs": [
