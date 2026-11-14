@@ -4,15 +4,15 @@ const MAJ_RESULTATS = "14 novembre 2026";
 const EQUIPES = [
   {"club":"AS St Genès Champanelle 1","court":"R3","id":"s1","niveau":"Régional 3 · Poule B","nom":"Seniors 1",
     "classement": [
-      ["AS Espinat F. 1",16,6,5,1,0,16,5,11,533889],
+      ["AS Espinat F. 1",19,7,6,1,0,19,6,13,533889],
       ["Aurillac FC 2",15,5,5,0,0,14,5,9,580563],
-      ["US Vallée de l'Authre 2",13,6,4,1,1,13,8,5,551835],
-      ["Esp. Ceyratoise 2",13,6,4,1,1,17,8,9,529030],
+      ["US Vallée de l'Authre 2",13,7,4,1,2,13,10,3,551835],
+      ["Esp. Ceyratoise 2",13,7,4,1,2,18,11,7,529030],
       ["Am. Laïq. de Quinssaines 1",11,6,3,2,1,11,6,5,522999],
+      ["AS Varennoise 1",8,7,2,2,3,12,19,-7,508744],
       ["AS Clermont St-Jacques 1",7,6,2,1,3,13,12,1,525985],
       ["AS St Genès Champanelle 1",7,6,2,1,3,7,11,-4,524952],
       ["CS Pont-du-Château 1",6,6,2,0,4,12,13,-1,520152],
-      ["AS Varennoise 1",5,6,1,2,3,10,19,-9,508744],
       ["CS de Volvic 1",4,6,1,1,4,8,18,-10,506562],
       ["AM.S Belbexoise 1",2,6,0,2,4,9,15,-6,531699],
       ["AS Cheminots St-Germain-des-Fossés 1",0,5,0,0,5,4,14,-10,506298]
@@ -48,11 +48,11 @@ const EQUIPES = [
   },
   {"club":"AS St Genès Champanelle 2","court":"D2","id":"s2","niveau":"Départemental 2 · Poule A","nom":"Seniors 2",
     "classement": [
-      ["FC Sauxillanges St-Babel Brenat 1",18,7,6,0,1,19,5,14,560797],
+      ["FC Sauxillanges St-Babel Brenat 1",21,8,7,0,1,20,5,15,560797],
       ["US Vic-le-Comte 2",15,7,5,0,2,12,7,5,506559],
       ["Esp. Ceyratoise 3",14,7,4,2,1,14,3,11,529030],
       ["St-Amant et Tallende SC 1",13,7,4,1,2,10,7,3,564178],
-      ["ES St-Germinoise 1",11,6,3,2,1,13,6,7,516806],
+      ["ES St-Germinoise 1",11,7,3,2,2,13,7,6,516806],
       ["US Issoire A. du Mas 3",10,7,3,1,3,8,10,-2,506507],
       ["Entente Vallée de la Dordogne 1",10,7,3,1,3,8,11,-3,561223],
       ["AS Orcines 2",8,7,2,2,3,14,12,2,520786],
