@@ -1,18 +1,18 @@
 /* Fichier généré par scripts/maj-resultats.pl : ne pas le modifier à la main. */
-const MAJ_RESULTATS = "14 novembre 2026";
+const MAJ_RESULTATS = "15 novembre 2026";
 
 const EQUIPES = [
   {"club":"AS St Genès Champanelle 1","court":"R3","id":"s1","niveau":"Régional 3 · Poule B","nom":"Seniors 1",
     "classement": [
       ["AS Espinat F. 1",19,7,6,1,0,19,6,13,533889],
-      ["Aurillac FC 2",15,5,5,0,0,14,5,9,580563],
+      ["Aurillac FC 2",18,6,6,0,0,22,5,17,580563],
       ["US Vallée de l'Authre 2",13,7,4,1,2,13,10,3,551835],
       ["Esp. Ceyratoise 2",13,7,4,1,2,18,11,7,529030],
       ["Am. Laïq. de Quinssaines 1",11,6,3,2,1,11,6,5,522999],
       ["AS Varennoise 1",8,7,2,2,3,12,19,-7,508744],
       ["AS Clermont St-Jacques 1",7,6,2,1,3,13,12,1,525985],
       ["AS St Genès Champanelle 1",7,6,2,1,3,7,11,-4,524952],
-      ["CS Pont-du-Château 1",6,6,2,0,4,12,13,-1,520152],
+      ["CS Pont-du-Château 1",6,7,2,0,5,12,21,-9,520152],
       ["CS de Volvic 1",4,6,1,1,4,8,18,-10,506562],
       ["AM.S Belbexoise 1",2,6,0,2,4,9,15,-6,531699],
       ["AS Cheminots St-Germain-des-Fossés 1",0,5,0,0,5,4,14,-10,506298]
@@ -49,17 +49,17 @@ const EQUIPES = [
   {"club":"AS St Genès Champanelle 2","court":"D2","id":"s2","niveau":"Départemental 2 · Poule A","nom":"Seniors 2",
     "classement": [
       ["FC Sauxillanges St-Babel Brenat 1",21,8,7,0,1,20,5,15,560797],
+      ["Esp. Ceyratoise 3",15,8,4,3,1,14,3,11,529030],
       ["US Vic-le-Comte 2",15,7,5,0,2,12,7,5,506559],
-      ["Esp. Ceyratoise 3",14,7,4,2,1,14,3,11,529030],
-      ["St-Amant et Tallende SC 1",13,7,4,1,2,10,7,3,564178],
+      ["St-Amant et Tallende SC 1",13,8,4,1,3,10,11,-1,564178],
       ["ES St-Germinoise 1",11,7,3,2,2,13,7,6,516806],
-      ["US Issoire A. du Mas 3",10,7,3,1,3,8,10,-2,506507],
+      ["Am. Laïq. S. de Besse Égliseneuve 1",11,8,3,2,3,11,8,3,529900],
+      ["US Issoire A. du Mas 3",10,8,3,1,4,8,12,-4,506507],
       ["Entente Vallée de la Dordogne 1",10,7,3,1,3,8,11,-3,561223],
       ["AS Orcines 2",8,7,2,2,3,14,12,2,520786],
-      ["Am. Laïq. S. de Besse Égliseneuve 1",8,7,2,2,3,7,8,-1,529900],
       ["Écureuils Franc Rosier 2",7,6,2,1,3,11,12,-1,526932],
-      ["AS St Genès Champanelle 2",3,7,1,0,6,11,30,-19,524952],
-      ["FC Plauzat-Champeix 1",0,7,0,0,7,3,19,-16,529886]
+      ["AS St Genès Champanelle 2",6,8,2,0,6,13,30,-17,524952],
+      ["FC Plauzat-Champeix 1",1,8,0,1,7,3,19,-16,529886]
     ],
     "matchs": [
       {"a":3,"adv":"Besse Égliseneuve","c":"Départemental 2","d":"2026-09-06","dom":true,"h":0,"logo":529900,"t":"13:00"},
@@ -70,7 +70,7 @@ const EQUIPES = [
       {"a":1,"adv":"AS Orcines (2)","c":"Départemental 2","d":"2026-10-25","dom":false,"h":5,"logo":520786,"t":"15:00"},
       {"a":3,"adv":"Neyrat Foot Mosaïc","c":"Coupe Gérard Faure","d":"2026-11-01","dom":true,"ff":true,"h":0,"logo":580903,"note":"Forfait","t":"15:00"},
       {"a":6,"adv":"St-Germain-Lembron","c":"Départemental 2","d":"2026-11-08","dom":true,"h":1,"logo":516806,"t":"15:00"},
-      {"adv":"US Issoire (3)","c":"Départemental 2","d":"2026-11-14","dom":false,"logo":506507,"t":"20:00"},
+      {"a":2,"adv":"US Issoire (3)","c":"Départemental 2","d":"2026-11-14","dom":false,"h":0,"logo":506507,"t":"20:00"},
       {"adv":"FC2SBB","c":"Départemental 2","d":"2026-11-22","dom":true,"logo":560797,"t":"13:00"},
       {"adv":"Vic-le-Comte (2)","c":"Départemental 2","d":"2026-12-06","dom":false,"logo":506559,"t":"13:00"},
       {"adv":"Vallée de la Dordogne","c":"Départemental 2","d":"2026-12-13","dom":false,"logo":561223,"t":"15:00"},
