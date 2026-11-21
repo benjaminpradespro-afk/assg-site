@@ -4,18 +4,18 @@ const MAJ_RESULTATS = "21 novembre 2026";
 const EQUIPES = [
   {"club":"AS St Genès Champanelle 1","court":"R3","id":"s1","niveau":"Régional 3 · Poule B","nom":"Seniors 1",
     "classement": [
+      ["Aurillac FC 2",21,7,7,0,0,27,6,21,580563],
       ["AS Espinat F. 1",19,7,6,1,0,19,6,13,533889],
-      ["Aurillac FC 2",18,6,6,0,0,22,5,17,580563],
-      ["Am. Laïq. de Quinssaines 1",14,7,4,2,1,14,8,6,522999],
-      ["US Vallée de l'Authre 2",13,7,4,1,2,13,10,3,551835],
-      ["Esp. Ceyratoise 2",13,7,4,1,2,18,11,7,529030],
-      ["AS St Genès Champanelle 1",10,7,3,1,3,9,11,-2,524952],
+      ["Esp. Ceyratoise 2",16,8,5,1,2,23,13,10,529030],
+      ["Am. Laïq. de Quinssaines 1",15,8,4,3,1,14,8,6,522999],
+      ["US Vallée de l'Authre 2",13,8,4,1,3,14,15,-1,551835],
+      ["AS St Genès Champanelle 1",10,8,3,1,4,11,16,-5,524952],
       ["AS Varennoise 1",8,7,2,2,3,12,19,-7,508744],
+      ["CS Pont-du-Château 1",7,8,2,1,5,12,21,-9,520152],
       ["AS Clermont St-Jacques 1",7,7,2,1,4,15,15,0,525985],
-      ["CS Pont-du-Château 1",6,7,2,0,5,12,21,-9,520152],
       ["AM.S Belbexoise 1",5,7,1,2,4,11,16,-5,531699],
-      ["CS de Volvic 1",4,7,1,1,5,8,20,-12,506562],
-      ["AS Cheminots St-Germain-des-Fossés 1",0,6,0,0,6,5,16,-11,506298]
+      ["CS de Volvic 1",5,8,1,2,5,10,22,-12,506562],
+      ["AS Cheminots St-Germain-des-Fossés 1",1,7,0,1,6,7,18,-11,506298]
     ],
     "matchs": [
       {"a":8,"adv":"FC Thiers Auvergne","c":"Coupe de France","d":"2026-08-30","dom":false,"h":0,"logo":582753,"t":"14:30"},
@@ -29,7 +29,7 @@ const EQUIPES = [
       {"a":1,"adv":"Belbex","c":"Régional 3","d":"2026-10-24","dom":true,"h":2,"logo":531699,"t":"19:00"},
       {"a":0,"adv":"AS Espinat","c":"Régional 3","d":"2026-11-08","dom":false,"h":3,"logo":533889,"t":"15:00"},
       {"a":0,"adv":"CS Volvic","c":"Régional 3","d":"2026-11-15","dom":true,"h":2,"logo":506562,"t":"15:00"},
-      {"adv":"Ceyrat (2)","c":"Régional 3","d":"2026-11-21","dom":false,"logo":529030,"t":"18:00"},
+      {"a":2,"adv":"Ceyrat (2)","c":"Régional 3","d":"2026-11-21","dom":false,"h":5,"logo":529030,"t":"18:00"},
       {"adv":"St-Germain-des-Fossés","c":"Régional 3","d":"2026-12-06","dom":true,"logo":506298,"t":"15:00"},
       {"adv":"AS Varennes","c":"Régional 3","d":"2026-12-12","dom":false,"logo":508744,"t":"19:00"},
       {"adv":"AS Clermont St-Jacques","c":"Régional 3","d":"2027-01-30","dom":false,"logo":525985,"t":"17:30"},
