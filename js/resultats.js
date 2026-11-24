@@ -1,5 +1,5 @@
 /* Fichier généré par scripts/maj-resultats.pl : ne pas le modifier à la main. */
-const MAJ_RESULTATS = "23 novembre 2026";
+const MAJ_RESULTATS = "24 novembre 2026";
 
 const EQUIPES = [
   {"club":"AS St Genès Champanelle 1","court":"R3","id":"s1","niveau":"Régional 3 · Poule B","nom":"Seniors 1",
@@ -51,9 +51,9 @@ const EQUIPES = [
       ["FC Sauxillanges St-Babel Brenat 1",24,9,8,0,1,22,6,16,560797],
       ["Esp. Ceyratoise 3",18,9,5,3,1,16,3,13,529030],
       ["US Vic-le-Comte 2",18,8,6,0,2,15,7,8,506559],
+      ["Entente Vallée de la Dordogne 1",16,9,5,1,3,13,11,2,561223],
       ["St-Amant et Tallende SC 1",14,9,4,2,3,11,12,-1,564178],
-      ["Entente Vallée de la Dordogne 1",13,8,4,1,3,11,11,0,561223],
-      ["ES St-Germinoise 1",11,7,3,2,2,13,7,6,516806],
+      ["ES St-Germinoise 1",11,8,3,2,3,13,9,4,516806],
       ["AS Orcines 2",11,9,3,2,4,17,17,0,520786],
       ["Am. Laïq. S. de Besse Égliseneuve 1",11,9,3,2,4,13,11,2,529900],
       ["US Issoire A. du Mas 3",10,8,3,1,4,8,12,-4,506507],
